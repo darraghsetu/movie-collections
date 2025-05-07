@@ -1,5 +1,13 @@
 # Web Application Development 1
 ## Assignment 2 Project
+
+
+### Live Site 
+
+***Note:*** This repo does not contain a cloudinary API key (used for image upload/hosting) and is only to display the code. 
+
+**To view the live site** please visit: https://wad1-ca2-darragh-drohan.glitch.me
+
 ---
 ### Populated Collections
 A user account with populated collections:
