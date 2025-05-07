@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "firstName": "Darragh",
+      "lastName": "Drohan",
+      "email": "darragh@setu.ie",
+      "password": "$2b$05$KlHG/LHmlxWNT17DkH8LFuB.BGJ/2L8.8kPd83I..PKWkwge2UUbW",
+      "userId": "022639ff-0d21-45b1-a9a2-302537a51f5e",
+      "image": "http://res.cloudinary.com/web-app-dev-2025/image/upload/v1745524630/nlpk7bmutzapcnva3wvg.png"
+    },
+    {
+      "firstName": "Mary",
+      "lastName": "Lyng",
+      "email": "mary.lyng@setu.ie",
+      "password": "$2b$05$OPQO5vDV8zr04L1y3T6rfuC96NCAV2cTpSe4.vK3HLk8jBVVrV/my",
+      "userId": "96a6c24b-fd7d-40e4-a923-f05d891f7d8e",
+      "image": "http://res.cloudinary.com/web-app-dev-2025/image/upload/v1746538224/mhjhyhlrkhzlmqewdfk7.jpg"
+    },
+    {
+      "firstName": "Test",
+      "lastName": "User",
+      "email": "test@setu.ie",
+      "password": "$2b$05$EW.PjOQlZalLVCgK0o02Oey/yw5VgVGEPQDhDp0TLNWWUV7aOGCuC",
+      "userId": "5fd8d430-d496-4d5d-aa10-8ffdc3c78049",
+      "image": "http://res.cloudinary.com/web-app-dev-2025/image/upload/v1746627400/p16yfgz7p8aj9pkiygpv.jpg"
+    }
+  ]
+}

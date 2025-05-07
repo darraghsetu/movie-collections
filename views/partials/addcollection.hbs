@@ -1,0 +1,47 @@
+<div id="new-collection" class="ui hidden segment">
+
+  <div class="ui header subHeading">
+    Add a New Movie Collection  
+  </div>
+
+  <form id="collection-form" class="ui form" action="/dashboard/addcollection" 
+    method="POST"  enctype="multipart/form-data">
+
+    <div class="ui segment">
+      <div class="two fields">
+
+        <div class="required field">
+          <label for="collection-title">Collection Name</label>
+          <input id="collection-title" placeholder="Movie Collection Name" type="text" name="title" required>
+        </div>
+
+        <div class="required field">
+          <label>Collection Image</label>
+
+          <div class="ui file action input">
+            <input id="collection-image" type="file" name="image" required>
+            <label for="collection-image" class="ui upload-image button">
+              <i class="white cloud upload icon"></i>Upload Image
+            </label>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="ui submit button">
+        Add Collection
+      </button>
+      
+      <div id="clear-new-collection-btn" class="ui negative basic button">
+        Clear
+      </div>
+      
+      <div id="cancel-new-collection-btn" class="ui negative basic button">
+        Cancel
+      </div>
+
+    </div>
+    
+  </form>
+  
+</div>

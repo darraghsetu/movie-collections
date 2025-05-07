@@ -1,0 +1,168 @@
+<div class="ui center aligned grid" style="margin-top: 20px; margin-bottom: 20px">
+
+  <div class="ui row">
+    <div class="ten wide column">
+
+      {{#if userCount}}
+        <div class="ui three centered stackable mini red statistics">
+
+          <div class="statistic">
+            
+            <div class="value">
+              {{formatNumber userCount}}
+            </div>
+
+            <div class="label">
+              registered {{pluralise userCount 'user' 'users'}}
+            </div>
+            
+          </div>
+
+      {{else}}
+        <div class="ui two centered stackable mini red statistics">
+      {{/if}}
+
+          <div class="statistic">
+
+            <div class="value">
+              {{formatNumber collectionCount}} 
+            </div>
+
+            <div class="label">
+              movie {{pluralise collectionCount 'collection' 'collections'}}
+            </div>
+
+          </div>
+
+          <div class="statistic">
+            
+            <div class="value">
+              {{formatNumber movieCount}} 
+            </div>
+            
+            <div class="label">
+              {{pluralise collectionCount 'movie' 'movies'}} added
+            </div>
+            
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="ui row" style="padding-top: 50px">
+      <div class="sixteen wide column">
+
+        <div class="ui three centered stackable mini red statistics">
+
+          <div class="statistic">
+            <div class="value">
+              {{formatNumber avgCollectionSize}}
+            </div>
+            
+            <div class="label">
+              {{pluralise avgCollectionSize 'movie' 'movies'}}
+              on average per collection
+            </div>
+          </div>
+
+          <div class="statistic">
+            <div class="value">
+              {{formatNumber minSize}}
+            </div>
+            
+            <div class="label">
+              {{pluralise minSize 'movie' 'movies'}}
+              in the smallest {{pluralise smallestCollections.length 'collection' 'collections'}}
+            </div>
+          </div>
+
+          <div class="statistic">
+            <div class="value">
+              {{formatNumber maxSize}}
+            </div>
+            
+            <div class="label">
+              {{pluralise maxSize 'movie' 'movies'}}
+              in the largest {{pluralise largestCollections.length 'collection' 'collections'}}
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+    </div>
+
+    {{#if smallestCollections}}
+      <div class="ui row" style="padding-top: 50px">
+        <div class="sixteen wide column">
+        
+          <div class="ui two centered stackable mini red statistics">
+
+            <div class="statistic">
+              <div class="value">
+                Smallest {{pluralise smallestCollections.length 'collection' 'collections'}}:
+              </div>
+
+              <br>
+
+              <div class="label">
+                <div class="ui list">
+                  
+                  {{#each smallestCollections}}
+                    {{#if (lessThanOrEquals @index 2)}}
+                      <div class="item">
+                        {{this}}
+                      </div>
+                    {{/if}}
+                  {{/each}}
+
+                  {{#if (greaterThan smallestCollections.length 3)}}
+                    <div class="item">
+                      And More...
+                    </div>
+                  {{/if}}
+
+                </div>
+              </div>
+            </div>
+
+            <div class="statistic">
+              <div class="value">
+                Largest {{pluralise largestCollections.length 'collection' 'collections'}}:
+              </div>
+
+              <br>
+
+              <div class="label">
+                <div class="ui list">
+
+                  {{#each largestCollections}}
+                    {{#if (lessThan @index 3)}}
+                      <div class="item">
+                        {{this}}
+                      </div>
+                    {{/if}}
+                  {{/each}}
+
+                  {{#if (greaterThan largestCollections.length 3)}}
+                    <div class="item">
+                    And More...
+                    </div>
+                  {{/if}}
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+        </div>
+      </div>
+    {{/if}}
+  </div>
+{{!-- 
+  Can ignore this error, there are two opening div tags in the if else statement at the start 
+  but only one of them is rendered, tags match when outputted
+--}}

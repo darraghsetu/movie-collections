@@ -1,0 +1,32 @@
+{{> menu id="search"}}
+
+<form class="ui segment form" action = "/searchGenre" method = "POST">
+
+  <div class="field">
+    <label>Search by Genre</label>
+    
+    {{#if genres}}
+      <select name="genre" id="genreDropdown">
+        <option>Please select a Genre</option>
+        
+        {{#each genres}}
+          <option value = "{{this}}">{{this}}</option>
+        {{/each}}
+      </select>
+    
+    {{else}}
+      {{!-- Can ignore the error below, only one select will be output, so no clashing IDs --}}
+      <select name="genre" id="genreDropdown" disabled>
+        <option>No Genres to Search</option>
+      </select>
+    {{/if}}
+  </div>
+  
+</form>
+
+{{> results}}
+
+<script>
+    const dropdown = document.querySelector("#genreDropdown");
+    dropdown.addEventListener("change", () => document.querySelector("form").submit());
+</script>

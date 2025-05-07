@@ -1,0 +1,39 @@
+<nav class="ui stackable menu">
+
+  <header class="ui header item"> 
+    <a href="/" class="logo">The Terror Trove</a>
+  </header>
+
+  <div class="right menu">
+    
+    <span class="name">{{userName}}</span>
+    
+    <span class="userImage">
+      <img src="{{image}}" class="ui avatar image">
+    </span>
+    
+    <a id="dashboard" class="item" href="/dashboard">
+      Your Collections
+    </a>
+    
+    <a id="about" class="item" href="/about">
+      About
+    </a>
+    
+    <a id="search" class="item" href="/search">
+      Search
+    </a>
+    
+    <a id="logout" class="right menu item" href="/logout">
+      Logout
+    </a>
+    
+  </div>
+
+</nav>
+
+{{#if id}}
+  <script>
+    document.querySelector("#{{id}}").classList.add("active");                     
+  </script>
+{{/if}}

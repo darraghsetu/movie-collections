@@ -1,0 +1,163 @@
+<div id="new-movie" class="ui hidden segment">
+  
+  <h3 class="ui header subHeading" style="color: #b30000">
+    Add a New Movie
+  </h3>
+
+  <form id="movie-form" class="ui segment form" action="/movie-collection/{{collectionId}}/addmovie" 
+    method="POST" style="margin-top: 10px; margin-bottom: 10px" enctype="multipart/form-data">
+
+    <div class="ui tiny red compact message">
+      Fields marked with <span style="color: red">*</span> are required.<br>
+    </div>
+
+    <!-- Title and Release Year -->
+    <div class="fields" style="margin-top: 10px">
+      <div class="required ten wide field">
+        <label>Title</label>
+        
+        <input type="text" name="title" required title="Please include a valid Title"
+          placeholder="Title">
+      </div>
+
+      <div class="required three wide field">
+        <label>Release Year</label>
+        
+        <input type="number" name="releaseYear" min="1901" max="{{getCurrentYear}}" value="{{getCurrentYear}}" 
+          autofocus required title="Please include a valid Year (1901 - {{currentYear}})" placeholder="Release Year">
+      </div>
+
+      <!-- Runtime -->
+      <div class="required three wide field">
+        <label>Runtime</label>
+        
+        <div class="ui right labeled input">
+          <input type="number" name="runtime" min="1" required title="Please enter the Runtime in minutes">
+          
+          <div class="ui label" style="background-color: #b30000; color: white">
+            Minutes
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- Directors -->
+    <div class="required field" style="margin-top: 20px">
+      <label>Director(s)</label>  
+    
+      <div class="three fields">
+        
+        <div class="field">
+          <input type="text" name="directors[]" required title = "Please enter a Director name"
+            placeholder="Director Name">  
+        </div>
+
+        <div class="field">
+          <input type="text" name="directors[]" title = "Please enter a Director name"
+            placeholder="Director Name (Optional)">  
+        </div>
+
+        <div class="field">
+          <input type="text" name="directors[]" title = "Please enter a Director name"
+            placeholder="Director Name (Optional)">  
+        </div> 
+        
+      </div>
+    </div>
+
+    <!-- Cast -->
+    <div class="required field" style="margin-top: 20px">
+      <label>Cast</label>
+      
+      <div class="three fields">
+
+        <div class="field">
+          <input type="text" name="cast[]" required title = "Please enter an Actor name"
+            placeholder="Actor Name">  
+        </div>
+
+        <div class="field">
+          <input type="text" name="cast[]" title = "Please enter an Actor name"
+            placeholder="Actor Name (Optional)">  
+        </div>
+
+        <div class="field">
+          <input type="text" name="cast[]" title = "Please enter an Actor name"
+            placeholder="Actor Name (Optional)">  
+        </div>
+
+      </div> 
+    </div>
+
+    <div class="field" style="margin-top: 20px">
+      <label>Subgenre(s)</label>
+    
+      <div class="ui compact red message" style="margin-top: 10px; margin-bottom: 20px">
+        <ul style="padding-left: 1em">
+          <li style="padding-bottom:5px">Horror added by default</li>
+          <li style="padding-bottom:5px"><b>Optional</b>; maximum of two additional subgenres</li>
+        </ul>
+      </div>
+
+      <!-- Subgenres -->
+      <div class="three fields" >
+        
+        <div class="field">
+          <input type="text" name="genres[]" placeholder="Genre (Optional)">
+        </div>
+        
+        <div class="field">
+          <input type="text" name="genres[]" placeholder="Genre (Optional)">
+        </div>
+        
+        <div class="hidden field">
+          <input type="text" name="genres[]" value="Horror">
+        </div>  
+        
+      </div>
+    </div>
+
+    <!-- Movie Image -->
+    <div class="seven wide required field" style="margin-top: 20px">
+      <label>Movie Image</label>
+
+      <div class="ui file action input">
+        <input id="image" type="file" name="image" required>
+        
+        <label for="image" class="ui upload-image button">
+          <i class="white cloud upload icon"></i>Upload Image
+        </label>
+      </div>
+    </div>
+
+    <!-- Favourite -->
+    <div class="ui compact segment" style="border-color: red; margin-top: 30px">
+      <div class="field" style="display: flex; align-items: center;">
+        <div class="ui invisible checkbox" style=" margin-left: 0.5em; margin-right: 0.25em">
+          <input type="checkbox" id="favouriteCB" name="favourite">
+          
+          <label for="favouriteCB" class="image">
+            <i class="ui yellow star icon"></i>
+          </label>
+        </div>
+        
+        <label style="padding-top: 5px;">Mark as Favourite Movie</label>
+      </div>
+    </div>
+
+    <button class="ui submit button" style="background-color: #b30000; color:white;margin-top: 20px">
+      Add Movie
+    </button>
+    
+    <div id="clear-new-movie-btn" class="ui negative basic button" style="margin-top: 20px">
+      Clear
+    </div>
+    
+    <div id="cancel-new-movie-btn" class="ui negative basic button" style="margin-top: 20px">
+      Cancel
+    </div>
+    
+  </form>
+  
+</div>

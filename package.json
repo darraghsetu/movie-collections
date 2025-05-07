@@ -1,0 +1,30 @@
+{
+  "name": "ca2-app",
+  "version": "1.0",
+  "description": "CA2 App",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "winston": "^3.17.0",
+    "lowdb": "^7.0.1",
+    "express-handlebars": "^8.0.1",
+    "body-parser": "^2.1.0",
+    "uuid": "^11.1.0",
+    "cookie-parser": "^1.4.7",
+    "express-fileupload": "^1.5.1",
+    "cloudinary": "^2.6.0",
+    "bcrypt": "^5.1.1"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}

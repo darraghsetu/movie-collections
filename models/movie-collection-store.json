@@ -1,0 +1,408 @@
+{
+  "movieCollections": [
+    {
+      "collectionId": "fe5a8234-133f-426c-9f02-8b8249ac75a9",
+      "userId": "022639ff-0d21-45b1-a9a2-302537a51f5e",
+      "title": "Frankenstein Movies",
+      "movies": [
+        {
+          "movieId": "79a3eba8-f4e8-4ba2-860b-8de3016a77be",
+          "title": "Frankenstein",
+          "releaseYear": "1931",
+          "runtime": "71",
+          "directors": [
+            "James Whale"
+          ],
+          "cast": [
+            "Colin Clive",
+            "Mae Clarke",
+            "Boris Karloff"
+          ],
+          "genres": [
+            "Horror",
+            "Sci-Fi",
+            "Drama"
+          ],
+          "image": "http://res.cloudinary.com/web-app-dev-2025/image/upload/v1745863455/lakcygu1vyp6sdvoer6w.jpg",
+          "favourite": true
+        },
+        {
+          "movieId": "c6cabb52-d9b8-46c1-85f2-e37d24d0f3f3",
+          "title": "Mary Shelley's Frankenstein",
+          "releaseYear": "1994",
+          "runtime": "123",
+          "directors": [
+            "Kenneth Branagh"
+          ],
+          "cast": [
+            "Kenneth Branagh",
+            "Robert De Niro",
+            "Tom Hulce"
+          ],
+          "genres": [
+            "Horror",
+            "Drama",
+            "Romance"
+          ],
+          "image": "http://res.cloudinary.com/web-app-dev-2025/image/upload/v1746125634/hbgfiu3wm0at10muccxp.jpg",
+          "favourite": false
+        },
+        {
+          "movieId": "5119620f-bf9b-4406-a8cb-b1d8c1f4e3c4",
+          "title": "Victor Frankenstein",
+          "releaseYear": "2015",
+          "runtime": "110",
+          "directors": [
+            "Paul McGuigan"
+          ],
+          "cast": [
+            "Daniel Radcliffe",
+            "James McAvoy",
+            "Andrew Scott"
+          ],
+          "genres": [
+            "Horror",
+            "Drama",
+            "Thriller"
+          ],
+          "image": "http://res.cloudinary.com/web-app-dev-2025/image/upload/v1746129824/xsflci8kjko2qgybzsfj.jpg",
+          "favourite": true
+        },
+        {
+          "movieId": "2ed58194-8e2d-45ea-9c89-77c061cf953f",
+          "title": "Van Helsing",
+          "releaseYear": "2004",
+          "runtime": "131",
+          "directors": [
+            "Stephen Sommers"
+          ],
+          "cast": [
+            "Hugh Jackman",
+            "Kate Beckinsale",
+            "Richard Roxburgh"
+          ],
+          "genres": [
+            "Horror",
+            "Action",
+            "Adventure"
+          ],
+          "image": "http://res.cloudinary.com/web-app-dev-2025/image/upload/v1746133931/gi9dcr4tx6cwvoj6vpjd.jpg",
+          "favourite": true
+        }
+      ],
+      "date": "2025-04-26T13:47:20.854Z",
+      "image": "http://res.cloudinary.com/web-app-dev-2025/image/upload/v1745675240/m5gvup9gghvcuzz24rxd.jpg"
+    },
+    {
+      "collectionId": "b2b94f67-5bce-46a4-849b-ef13981acc66",
+      "userId": "022639ff-0d21-45b1-a9a2-302537a51f5e",
+      "title": "Vampire Movies",
+      "movies": [
+        {
+          "movieId": "1a9787e4-e8b9-4519-989d-e6a94607c8d2",
+          "title": "Dracula",
+          "releaseYear": "1992",
+          "runtime": "128",
+          "directors": [
+            "Francis Ford Coppola"
+          ],
+          "cast": [
+            "Gary Oldman",
+            "Keanu Reeves",
+            "Winona Ryder"
+          ],
+          "genres": [
+            "Horror",
+            "Romance",
+            "Fantasy"
+          ],
+          "image": "http://res.cloudinary.com/web-app-dev-2025/image/upload/v1746134224/kttyldbf5husk21ngnul.jpg",
+          "favourite": true
+        },
+        {
+          "movieId": "d597bbdc-1a7a-402c-b5e0-6dd0f1ff9b51",
+          "title": "Interview with the Vampire",
+          "releaseYear": "1994",
+          "runtime": "123",
+          "directors": [
+            "Neil Jordan"
+          ],
+          "cast": [
+            "Brad Pitt",
+            "Tom Cruise",
+            "Antonio Banderas"
+          ],
+          "genres": [
+            "Horror",
+            "Drama",
+            "Fantasy"
+          ],
+          "image": "http://res.cloudinary.com/web-app-dev-2025/image/upload/v1746134382/lbtgjax18jhalk59hhil.jpg",
+          "favourite": true
+        },
+        {
+          "movieId": "23a9e212-8594-411b-8333-2348436e9c83",
+          "title": "The Lost Boys",
+          "releaseYear": "1987",
+          "runtime": "97",
+          "directors": [
+            "Joel Schumacher"
+          ],
+          "cast": [
+            "Jason Patric",
+            "Kiefer Sutherland",
+            "Dianne Wiest"
+          ],
+          "genres": [
+            "Horror",
+            "Comedy"
+          ],
+          "image": "http://res.cloudinary.com/web-app-dev-2025/image/upload/v1746134495/zyk0m63xxftgq3oajstf.jpg",
+          "favourite": false
+        },
+        {
+          "movieId": "ea8aa969-2c55-4dbb-89da-16d8ba4a853f",
+          "title": "Van Helsing",
+          "releaseYear": "2004",
+          "runtime": "131",
+          "directors": [
+            "Stephen Sommers"
+          ],
+          "cast": [
+            "Hugh Jackman",
+            "Kate Beckinsale",
+            "Richard Roxburgh"
+          ],
+          "genres": [
+            "Horror",
+            "Action",
+            "Adventure"
+          ],
+          "image": "http://res.cloudinary.com/web-app-dev-2025/image/upload/v1746134581/dgs1zpkziilvhp5dj2oi.jpg",
+          "favourite": true
+        },
+        {
+          "movieId": "2be42c5b-22df-46c8-83b6-3871d48733bf",
+          "title": "Nosferatu",
+          "releaseYear": "2024",
+          "runtime": "132",
+          "directors": [
+            "Robert Eggers"
+          ],
+          "cast": [
+            "Lily-Rose Depp",
+            "Bill Skarsgård",
+            "Nicholas Holt"
+          ],
+          "genres": [
+            "Horror",
+            "Fantasy",
+            "Mystery"
+          ],
+          "image": "http://res.cloudinary.com/web-app-dev-2025/image/upload/v1746134735/ztymce5q8leujq5fpwbt.jpg",
+          "favourite": false
+        },
+        {
+          "movieId": "ebce41c5-b50b-4d43-a3f3-ddfd379b6679",
+          "title": "From Dusk Till Dawn",
+          "releaseYear": "1996",
+          "runtime": "108",
+          "directors": [
+            "Robert Rodriguez"
+          ],
+          "cast": [
+            "George Clooney",
+            "Quentin Tarantino",
+            "Salma Hayek"
+          ],
+          "genres": [
+            "Horror",
+            "Crime",
+            "Action"
+          ],
+          "image": "http://res.cloudinary.com/web-app-dev-2025/image/upload/v1746135672/lazfinvw7lygfydabbwj.jpg",
+          "favourite": false
+        }
+      ],
+      "date": "2025-04-26T13:52:03.979Z",
+      "image": "http://res.cloudinary.com/web-app-dev-2025/image/upload/v1745675524/oteecfcfq6w3ceh0to82.jpg"
+    },
+    {
+      "collectionId": "8c6f7199-a623-4913-95f1-f10a4eff70ca",
+      "userId": "022639ff-0d21-45b1-a9a2-302537a51f5e",
+      "title": "Movies with Witches",
+      "movies": [
+        {
+          "movieId": "989ed149-0e8b-4ebf-bf8d-7c5262604bd2",
+          "title": "The Witch",
+          "releaseYear": "2015",
+          "runtime": "93",
+          "directors": [
+            "Robert Eggers"
+          ],
+          "cast": [
+            "Anna Taylor-Joy",
+            "Ralph Ineson",
+            "Kate Dickie"
+          ],
+          "genres": [
+            "Horror",
+            "Drama",
+            "Mystery"
+          ],
+          "image": "http://res.cloudinary.com/web-app-dev-2025/image/upload/v1746136371/aqmuuhdzifzsohih8497.jpg",
+          "favourite": true
+        },
+        {
+          "movieId": "86d06634-e845-4927-93d8-0c020df31451",
+          "title": "The Blair Witch Project",
+          "releaseYear": "1999",
+          "runtime": "81",
+          "directors": [
+            "Daniel Myrick",
+            "Eduardo Sánchez"
+          ],
+          "cast": [
+            "Heather Donahue",
+            "Michael C. Williams",
+            "Joshua Leonard"
+          ],
+          "genres": [
+            "Horror",
+            "Mystery"
+          ],
+          "image": "http://res.cloudinary.com/web-app-dev-2025/image/upload/v1746137038/zp8ceq56t7xwcqejstnc.jpg",
+          "favourite": false
+        }
+      ],
+      "date": "2025-04-26T14:01:05.327Z",
+      "image": "http://res.cloudinary.com/web-app-dev-2025/image/upload/v1745676065/mxxfds2fev6mhztah0xm.jpg"
+    },
+    {
+      "collectionId": "ade015be-1bea-4244-bf5d-cab550430469",
+      "userId": "022639ff-0d21-45b1-a9a2-302537a51f5e",
+      "title": "Movies with The Devil",
+      "movies": [
+        {
+          "movieId": "45751e7d-b9c2-4e12-90d6-07716310ce7a",
+          "title": "The Devil's Advocate",
+          "releaseYear": "1997",
+          "runtime": "144",
+          "directors": [
+            "Taylor Hackford"
+          ],
+          "cast": [
+            "Al Pacino",
+            "Keanu Reeves",
+            "Charlize Theron"
+          ],
+          "genres": [
+            "Horror",
+            "Drama",
+            "Mystery"
+          ],
+          "image": "http://res.cloudinary.com/web-app-dev-2025/image/upload/v1746137279/xlqvgf7i37c64wmcrucc.jpg",
+          "favourite": false
+        },
+        {
+          "movieId": "c7b5e33b-744f-4e97-953a-a2660b9c7e7a",
+          "title": "Angel Heart",
+          "releaseYear": "1987",
+          "runtime": "113",
+          "directors": [
+            "Alan Parker"
+          ],
+          "cast": [
+            "Mickey Rourke",
+            "Robert De Niro",
+            "Lisa Bonet"
+          ],
+          "genres": [
+            "Horror",
+            "Mystery",
+            "Thriller"
+          ],
+          "image": "http://res.cloudinary.com/web-app-dev-2025/image/upload/v1746137593/cobkwwoseiclru9aaklk.jpg",
+          "favourite": false
+        },
+        {
+          "movieId": "78387fed-f176-497a-905f-d4f5a88bbc21",
+          "title": "Prince of Darkness",
+          "releaseYear": "1987",
+          "runtime": "102",
+          "directors": [
+            "John Carpenter"
+          ],
+          "cast": [
+            "Donald Pleasence",
+            "Lisa Blount",
+            "Jameson Parker"
+          ],
+          "genres": [
+            "Horror"
+          ],
+          "image": "http://res.cloudinary.com/web-app-dev-2025/image/upload/v1746138055/ngvlnrfjze2l1w0uvx2z.jpg",
+          "favourite": false
+        }
+      ],
+      "date": "2025-04-26T14:03:13.096Z",
+      "image": "http://res.cloudinary.com/web-app-dev-2025/image/upload/v1745676193/zfzhkpbq5gigmsmmlcgp.jpg"
+    },
+    {
+      "collectionId": "99df681e-4815-4eee-892b-43a268cb6698",
+      "userId": "022639ff-0d21-45b1-a9a2-302537a51f5e",
+      "title": "Alien Movies",
+      "movies": [
+        {
+          "movieId": "333de04a-d8d8-4b11-ac82-78d709b4a00d",
+          "title": "Alien",
+          "releaseYear": "1979",
+          "runtime": "117",
+          "directors": [
+            "Ridley Scott"
+          ],
+          "cast": [
+            "Sigourney Weaver",
+            "John Hurt",
+            "Harry Dean Stanton"
+          ],
+          "genres": [
+            "Horror",
+            "Sci-Fi"
+          ],
+          "image": "http://res.cloudinary.com/web-app-dev-2025/image/upload/v1746138239/dr9e8dpgq5ztazhwfxgt.jpg",
+          "favourite": true
+        }
+      ],
+      "date": "2025-04-26T14:04:49.079Z",
+      "image": "http://res.cloudinary.com/web-app-dev-2025/image/upload/v1745676289/q5hyn4wzq5ebs4tsov8z.jpg"
+    },
+    {
+      "collectionId": "631ff0fb-310f-4e45-8e66-419476114a73",
+      "userId": "96a6c24b-fd7d-40e4-a923-f05d891f7d8e",
+      "title": "Titanic",
+      "movies": [
+        {
+          "movieId": "979400b6-4f77-47e5-b377-d4a100fda7c9",
+          "title": "test",
+          "releaseYear": "2000",
+          "runtime": "120",
+          "directors": [
+            "James Cameron"
+          ],
+          "cast": [
+            "Rock Hudson"
+          ],
+          "genres": [
+            "Horror",
+            "Romance"
+          ],
+          "image": "http://res.cloudinary.com/web-app-dev-2025/image/upload/v1746538299/u3mzjt48t7britui5i4h.jpg",
+          "favourite": true
+        }
+      ],
+      "date": "2025-05-06T13:30:45.179Z",
+      "image": "http://res.cloudinary.com/web-app-dev-2025/image/upload/v1746538245/utalvl6rx9ec6x3hllvf.jpg"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+:root{
+  --lighterRed: #b30000;
+  --darkerRed: #660000;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+  margin-top: 1em;
+  background-color: var(--darkerRed)
+}
+
+#image-container{
+  padding: 0;
+}
+
+.item.active{
+  background-color: darkRed !important;
+  color: white !important;
+  box-shadow: inset 0 4px 10px 3px rgba(0, 0, 0, 0.3) !important;
+}
+
+.right.menu.item{
+  border-top-right-radius: 5px; 
+  border-bottom-right-radius: 5px;
+}
+
+.pageHeading{
+  text-shadow: 2px 2px black; 
+  font-family: Creepster, Sans-Serif !important; 
+  color: darkRed !important;
+  font-size:4em !important;
+}
+
+.subHeading{
+  font-family: 'Jolly Lodger', Sans-Serif !important; 
+  color: darkRed !important; 
+  font-size: 3em !important;
+  text-shadow: 1px 1px black; 
+}
+
+form label{
+  color: var(--lighterRed) !important;
+  font-size: 1em !important;
+}
+
+form .submit.button, form .upload-image.button, #view-collection-button, [id^='delete-movie-button-']{
+  background-color: var(--lighterRed) !important;
+  color: white !important;
+}
+
+.card a:link, .card a:visited, .card a:hover, .card a:active{
+  color: white;
+}
+
+.logo{
+  font-family: 'Nosifer', Sans-Serif !important; 
+  color: var(--darkerRed) !important; 
+  font-size:1.5em !important;
+}
+
+.movieTitle{
+  color: darkRed !important;
+  font-family: 'Nosifer', Sans-Serif !important; 
+  font-size: 2em !important; 
+  margin-bottom:2px !important;
+}
+
+.ominousMessage{
+  line-height: 50px !important; 
+  margin-bottom: 1em !important; 
+  color: darkRed !important; 
+  font-family: Nosifer, Sans-Serif !important; 
+  font-size: 2em !important;
+}
+
+.ui.form:not(.initial) .field input:invalid{
+  background-color: white !important;
+  border-color: rgba(34, 36, 38, 0.15) !important;
+}
+
+.editSubmit {
+  border: none;
+  background: none;
+}
+
+.hidden, .hide{
+  display: none !important;
+}
+
+.name{
+  padding-top:29.5px;
+  padding-right:5px;
+  line-height:20px;
+  font-weight:bold;
+  text-transform:capitalize;
+}
+
+.userImage{
+  padding-top:23px;
+  padding-right:5px;
+  line-height:20px;
+  font-weight:bold;
+}
+
+#collection-card .image {
+  height: 150px;
+  overflow: hidden;
+}
+
+#collection-card .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fill, contain, cover, scale-down, none */
+}
+
+#movie-card .ui.content * {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+#movie-card .ui.content {
+  padding-bottom: 0;
+}
+
+#movie-card .ui.content>* {
+  margin-bottom: 10px;
+}
+
+#movie-card .ui.content>.header {
+  margin-bottom:2px;
+}
+
+#movie-card > .ui.content > .description > p {
+  margin-bottom: 0;
+}
+
+#movie-card > .ui.content > .description > #favourite {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.ui.card>.content .star.icon,.ui.cards>.card>.content .star.icon {
+  opacity: 1;
+  color: #ffb70a;
+}
+
+#movie-card .image {
+  height: 100%;
+  overflow: hidden;
+}
+
+#movie-card .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}

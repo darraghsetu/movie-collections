@@ -1,0 +1,107 @@
+{{> indexmenu id="signup"}}
+
+<!--
+  -- PLAGIARISM DISCLAIMER:
+  -- Not original work - The regular expression used as the pattern for 
+  -- the password input is not my own work. (Found on line 69)
+  -- Source: https://gemini.google.com
+  -->
+
+<div class="ui segment">
+  
+  <h3 class="ui centered header pageHeading">Register an Account</h3>
+  
+  {{#if error}}
+    <div class="ui closeable red message">      
+      <i class="close icon"></i>
+      
+      <div class="header">
+        Registration Failed
+      </div>
+      
+      {{error}}
+    </div>
+  {{/if}}
+  
+  <form class="ui segment form" action="/register" method="POST" enctype="multipart/form-data">
+
+    <div class="ui tiny red compact message">
+      Fields marked with <span style="color: red">*</span> are required.<br>
+    </div>
+
+    <div class="two fields">
+
+      <div class="required field">
+        <label for="firstName">
+          First Name
+        </label>
+        
+        <input placeholder="First Name" type="text" name="firstName" autofocus required>
+      </div>
+
+      <div class="required field">
+        <label for="lastName">
+          Last Name
+        </label>
+        
+        <input placeholder="Last Name" type="text" name="lastName" required>
+      </div>
+
+    </div>
+
+    <div class="required field">
+      <label for="email">
+        Email
+      </label>
+      
+      <input placeholder="someone@example.com" type="email" name="email" required>
+    </div>
+
+    <div class="required field">
+      <label for="password">Password</label>
+      
+      <input 
+        id="signupPassword" 
+        type="password" 
+        name="password"
+        required
+        autocomplete="one-time-code"
+        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{5,}$"
+        style="border-bottom-left-radius: 0; border-bottom-right-radius: 0">      
+      
+      <div id="passwordReqs" class="ui hidden bottom attached tiny red message" 
+        style="margin-left: 0; margin-right: 0">
+        
+        <div class="header">
+          Password Requirements
+        </div>
+        
+        <ul class="ui list">
+            <li>A minimum of 5 characters</li>
+            <li>At least one lowercase letter</li>
+            <li>At least one uppercase letter</li>
+            <li>At least one digit (0-9)</li>
+        </ul>
+        
+      </div>
+    </div>
+
+    <div class="seven wide required field">
+      <label>Profile Photo</label>
+      
+      <div class="ui file action input">  
+        <input id="image" type="file" name="image" required>
+        
+        <label for="image" class="ui upload-image button">
+          <i class="white cloud upload icon"></i>
+          Upload Image
+        </label>
+      </div>
+    </div>
+
+    <button class="ui submit button">
+      Submit
+    </button>
+
+  </form>
+</div>

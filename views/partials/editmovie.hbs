@@ -1,0 +1,152 @@
+<div id="edit-movie" class="ui hidden segment">
+  
+  <h3 id="edit-movie-header" class="ui header subHeading" style="color: #b30000"></h3>
+
+  <form id="edit-form" class="ui segment form" method="POST" style="margin-top: 10px; margin-bottom: 10px">
+
+    <div class="ui tiny red compact message">
+      Fields marked with <span style="color: red">*</span> are required.<br>
+    </div>
+
+    <div class="fields" style="margin-top: 10px">
+    
+      <!-- Title -->
+      <div class="required ten wide field">
+        <label>Title</label>
+        
+        <input id="edit-movie-title" type="text" name="title" required title="Please include a valid Title"
+          placeholder="Title">
+      </div>
+
+      <!-- Release Year -->
+      <div class="required three wide field">
+        <label>Release Year</label>
+        
+        <input id="edit-movie-release-year" type="number" name="releaseYear" min="1901" max="{{getCurrentYear}}"
+          required title="Please include a valid Year (1901 - {{currentYear}})" placeholder="Release Year">
+      </div>
+
+      <!-- Runtime -->
+      <div class="required three wide field">
+        <label>Runtime</label>
+        
+        <div class="ui right labeled input">
+          <input id="edit-movie-runtime" type="number" name="runtime" min="1" required 
+            title="Please enter the Runtime in minutes">
+          
+          <div class="ui label" style="background-color: #b30000; color: white">
+            Minutes
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- Directors -->
+    <div class="required field" style="margin-top: 20px">
+      <label>Director(s)</label>  
+      
+      <div class="three fields">
+        
+        <div class="field">
+          <input id="edit-movie-director-one" type="text" name="directors[]" required title = "Please enter a Director name"
+            placeholder="Director Name">  
+        </div>
+
+        <div class="field">
+          <input id="edit-movie-director-two" type="text" name="directors[]" title = "Please enter a Director name"
+            placeholder="Director Name (Optional)">  
+        </div>
+
+        <div class="field">
+          <input id="edit-movie-director-three" type="text" name="directors[]" title = "Please enter a Director name"
+            placeholder="Director Name (Optional)">  
+        </div> 
+        
+      </div>
+    </div>
+
+    <!-- Cast -->
+    <div class="required field" style="margin-top: 20px">
+      <label>Cast</label>
+
+      <div class="three fields">
+
+        <div class="field">
+          <input id="edit-movie-cast-one" type="text" name="cast[]" required title = "Please enter an Actor name"
+            placeholder="Actor Name">  
+        </div>
+
+        <div class="field">
+          <input id="edit-movie-cast-two" type="text" name="cast[]" title = "Please enter an Actor name"
+            placeholder="Actor Name (Optional)">  
+        </div>
+
+        <div class="field">
+          <input id="edit-movie-cast-three" type="text" name="cast[]" title = "Please enter an Actor name"
+            placeholder="Actor Name (Optional)">  
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Subgenres -->
+    <div class="field" style="margin-top: 20px">
+      <label>Subgenre(s)</label>
+      
+      <div class="ui compact red message" style="margin-top: 10px; margin-bottom: 20px">
+        <ul style="padding-left: 1em">
+          <li style="padding-bottom:5px">Horror added by default</li>
+          <li style="padding-bottom:5px"><b>Optional</b>; maximum of two additional subgenres</li>
+        </ul>
+      </div>
+
+      <div class="three fields" >
+
+        <div class="field">
+          <input id="edit-movie-genre-one" type="text" name="genres[]" placeholder="Genre (Optional)">
+        </div>
+        
+        <div class="field">
+          <input id="edit-movie-genre-two" type="text" name="genres[]" placeholder="Genre (Optional)">
+        </div>
+        
+        <div class="hidden field">
+          <input id="edit-movie-genre-three" type="text" name="genres[]" value="Horror">
+        </div>
+        
+      </div>  
+    </div>
+
+    <div class="ui compact red message" style="margin-top: 10px; margin-bottom: 0">
+      <b>Want to update the movie image?</b><br> 
+      That's unfortunate, you're stuck with it!
+    </div>
+
+    <!-- Favourite -->
+    <div class="ui compact segment" style="border-color: red; margin-top: 30px">
+      <div class="field" style="display: flex; align-items: center;">
+        <div class="ui invisible checkbox" style=" margin-left: 0.5em; margin-right: 0.25em">
+          <input id="edit-movie-favourite" type="checkbox" name="favourite">
+          <label for="edit-movie-favourite" class="image"><i class="ui yellow star icon"></i></label>
+        </div>
+        
+        <label style="padding-top: 5px;">Mark as Favourite Movie</label>
+      </div>
+    </div>
+
+    <button class="ui submit button" style="background-color: #b30000; color:white;margin-top: 20px">
+      Update Movie
+    </button>
+    
+    <div id="clear-edit-movie-btn" class="ui negative basic button" style="margin-top: 20px">
+      Clear
+    </div>
+    
+    <div id="cancel-edit-movie-btn" class="ui negative basic button" style="margin-top: 20px">
+      Cancel
+    </div>
+    
+  </form>
+  
+</div>

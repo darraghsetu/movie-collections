@@ -1,0 +1,18 @@
+<nav class="ui stackable menu">
+
+  <header class="ui header item"> 
+    <a href="/" class="logo">The Terror Trove</a>
+  </header>
+
+  <div class="right menu">
+    <a id="signup" class="item" href="/signup">Sign Up</a>
+    <a id="login" class="right menu item" href="/login">Login</a>
+  </div>
+
+</nav>
+
+{{#if id}}
+  <script>
+    document.querySelector("#{{id}}").classList.add("active");
+  </script>
+{{/if}}

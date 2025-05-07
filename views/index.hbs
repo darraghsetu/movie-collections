@@ -1,0 +1,68 @@
+{{> indexmenu}}
+
+<section class="ui segment">
+  <div class="ui sixteen column grid">
+
+    <div class="ui six wide column">
+      <div class="ui piled segment" style="padding:4px; background-color: #E8E8E8">
+        <div class="ui fluid image">
+          <img src="https://cdn.glitch.global/e468eeb2-fc41-4498-bde0-2afd316ef2cf/psycho.jpg?v=1741429109039" style="border-radius: 3px">
+        </div>  
+      
+        <div class="ui label" style="margin-left: 0; border-top-left-radius: 0; border-top-right-radius: 0;">
+          Audiences in 1960 seeing a 
+          <a href="https://www.imdb.com/title/tt0054215/trivia/?item=tr0791454" style="color: darkRed">
+            flushing toilet
+          </a> 
+          on screen for the first time
+        </div>
+      </div>
+    </div>
+
+    <div class="ui ten wide column">
+      
+      <h2 class="ui header pageHeading" style="text-align: center">
+        Welcome to
+      </h2>
+      <h2 class="ui header pageHeading" style="text-align: center; margin-top: -3%">
+        The Terror Trove
+      </h2>
+      
+      <p class="ui text container" style="text-align: center; width: 75%">
+        The Terror Trove was designed for you to upload your favourite horror movies 
+        and organise them into collections.
+      </p>
+      
+      <p class="ui text container" style="text-align: center; width: 75%">
+        Our aim is to provide a straightforward and effective way for you to keep track 
+        of your favourite horror classics.
+      </p>
+      
+      <p class="ui text container" style="text-align: center; width: 75%">
+        We hope you enjoy using The Terror Trove to organise your collections!
+      </p>      
+
+      <a id="signup" class="item" href="/signup">
+        <div class="ui centered button" style="background-color: #b30000; color:white; margin-top: 20px; margin-left: 40%">
+          Get Started!  
+        </div>
+      </a>
+      
+    </div>
+
+  </div>
+</section>
+
+<section class="ui center aligned middle aligned segment" style="margin-bottom:0.5em">
+  
+  <div class="ui header subHeading">
+    Our Spooky Statistics  
+  </div>
+
+  <div class="ui divider"></div>
+
+  {{#with statistics}}
+    {{> statistics}}
+  {{/with}}
+
+</section>

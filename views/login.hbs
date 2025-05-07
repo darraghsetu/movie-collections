@@ -1,0 +1,43 @@
+{{> indexmenu id='login'}}
+
+<div class="ui segment">
+  
+  <h3 class="ui centered header pageHeading">Log-in</h3>
+
+  {{#if error}}
+    <div class="ui closeable red message">
+      <i class="close icon"></i>
+
+      <div class="header">
+        Login Failed
+      </div>
+
+      {{error}}
+    </div>
+  {{/if}}
+
+  <form class="ui segment form" action="/authenticate" method="POST">
+
+    <div class="field">
+      <label for="email">
+        Email
+      </label> 
+      
+      <input placeholder="someone@example.com" type="email" name="email" autofocus required>
+    </div>
+
+    <div class="field">
+      <label for="password">
+        Password
+      </label>
+      
+      <input type="password" name="password" minlength="5" autocomplete="one-time-code" required>
+    </div>
+
+    <button class="ui submit button">
+      Login
+    </button>
+
+  </form>
+  
+</div>

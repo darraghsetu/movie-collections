@@ -1,0 +1,43 @@
+{{#if movies}}
+  <section class="ui left aligned middle aligned segment" style="padding-bottom: 25px">
+
+    <h3 class="ui center aligned header pageHeading" style="margin-top: 10px; margin-bottom: 15px">
+      {{formatNumber movies.length}} {{searchedGenre}} Movies Found
+    </h3>
+
+    <div class="ui divider"></div>
+
+    <div id="movie-collection" class="ui two column compact grid" style="margin-top: 65px; padding: 0; width: 100%">
+
+      {{#each movies}}
+        {{> listmovie collectionId=../collectionId}}
+      {{/each}}
+      
+      <script>
+        const editButtons = document.querySelectorAll('.editBtn');
+
+        if (editButtons) {
+          editButtons.forEach(button => {
+            button.remove();
+          });
+        }
+
+        const deleteButtons = document.querySelectorAll('[id^="delete-movie"]');
+
+        if (deleteButtons) {
+          deleteButtons.forEach(button => {
+            button.remove();
+          });
+        }
+
+        const movieResults = document.getElementById('movie-collection');
+
+        if (movieResults) {
+          movieResults.style.marginTop = "25px";
+        }
+      </script>
+      
+    </div>
+    
+  </section>
+{{/if}}

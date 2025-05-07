@@ -1,0 +1,84 @@
+{{> menu id="about"}}
+
+<section class="ui left aligned middle aligned segment">
+
+  {{#with companyInfo}}      
+    <div class="ui center aligned header pageHeading">
+      About {{name}}
+    </div>
+
+    <div class="ui divider"></div>
+
+    <div class="ui stretched grid">
+      <div class="ui eight wide column">
+        <div class="ui segment">
+          
+          <div class="ui header subHeading">
+            Our Horrifying History
+          </div>
+
+          <div class="ui divider"></div>
+
+          <p style="text-align: justify; margin-bottom: 15px">
+            {{blurb}}
+          </p>
+
+          <figure style="margin-bottom: 10px">
+            <div class="ui image">
+              <img src="https://cdn.glitch.global/e468eeb2-fc41-4498-bde0-2afd316ef2cf/Xtra-vision.jpg?v=1741423005246" style="border: darkRed medium solid; width:450px; height:250px">
+            </div>
+            
+            <figcaption class="invertedColours" style="padding: 0px 10px 3px 10px;">
+              Our store circa 2010
+            </figcaption>
+          </figure>
+
+        </div>
+      </div>
+
+      <div class="ui eight wide column">
+        <div class="ui segment">
+          
+          <div class="ui header subHeading">
+            Our Spooky Store
+          </div>
+
+          <div class="ui divider"></div>
+
+          <p style="margin-bottom: 5px; line-height: 120%">
+            <b>Our store is located at:</b>
+          </p>
+
+          <p style="padding-left: 15px; margin-bottom: 38px">
+            {{#each storeLocation}}
+              {{this}}{{#if @last}}{{else}},<br>{{/if}}
+            {{/each}}
+          </p>
+
+          <div class="ui center aligned container">
+            <iframe
+              width="450"
+              height="250"
+              style="border: darkRed medium solid"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBbdaPLF67S4uVA1s9vzgf0of3cOeadjwc&q=32+N+Main+St,+Centre,+Cork,+T12+F5N8,+Ireland"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  {{/with}}
+  
+</section>
+
+<div class="ui center aligned segment invertedColours">  
+  
+  {{#with developmentInfo}}
+    &copy; The Terror Trove {{yearDeveloped}}.
+    App Version: {{version}}, 
+    Developed By: <a href="#">{{developer}}</a>
+  {{/with}}  
+  
+</div>

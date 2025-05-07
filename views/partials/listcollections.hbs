@@ -1,0 +1,95 @@
+<section class="ui left aligned middle aligned segment" style="padding-bottom: 40px;">
+
+  <h2 class="ui center aligned header pageHeading" style="margin-top: 0.5px; margin-bot: 16px">
+    Your Creepy Collections
+  </h2>
+  
+  <div class="ui divider"></div>
+
+  <div class="ui grid">
+    
+    <div class="ui row">
+      <div class="column">
+        
+        <a href="#new-collection">
+          <div id="new-collection-btn"
+            class="ui right floated basic negative button" style="margin-bottom: 10px">
+            <i class="plus icon"></i>
+              Add Collection
+          </div>
+        </a>
+        
+      </div>
+    </div>
+
+    {{#unless userCollections}}
+      <div class="ui icon red center aligned message">
+        <i class="frown open outline icon" style="color: #b30000"></i>
+        
+        <div class="content">
+          <div class="header">No Movie Collections</div>
+          
+          <p>Click the Add Collection button to get started</p>
+        </div>
+      </div>
+
+    {{else}}
+      <div class="ui four equal width cards">
+      
+        {{#each userCollections}}
+          <div id="collection-card" class="ui card" style="min-width: 250px">
+
+            <div class="ui image">
+              <img src="{{image}}">
+            </div>
+
+            <div class="content">
+
+              <div class="header" style="color: #b30000">{{title}}</div> 
+
+              <div class="ui divider"></div>
+
+              <p>
+                <i class="film icon" style="margin-right: 5px"></i>
+
+                {{#if movies}}
+                  Number of Movies: {{movies.length}}
+                {{else}}
+                  Empty Collection
+                {{/if}}
+              </p>
+              
+              <p>
+                <i class="calendar alternate outline icon" style="margin-right: 5px"></i>
+                Created: <i>{{formatDate date}}</i>
+              </p>
+
+            </div>
+
+            <div class="extra content">
+            
+              <a href="/movie-collection/{{collectionId}}" >
+                <button id="view-collection-button" class="ui fluid button">
+                  <i class="ui open folder outline icon"></i>
+                  View Collection
+                </button>
+              </a>
+            
+            </div>
+
+            <a href="/dashboard/deletecollection/{{collectionId}}" style="margin-left: -0.86px; margin-right: -0.86px">
+              <div class="ui bottom attached fluid negative basic button">
+                <i class="ui trash icon"></i>
+                Delete Collection
+              </div>
+            </a>
+            
+          </div>
+        {{/each}}
+        
+      </div>
+    {{/unless}}
+    
+  </div>
+  
+</section>

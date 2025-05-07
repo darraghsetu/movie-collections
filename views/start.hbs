@@ -1,0 +1,23 @@
+{{> menu}}
+
+<section class="ui center aligned middle aligned segment">
+  
+  <h1 class="ui centered header pageHeading">
+    Welcome, {{userName}}
+  </h1>
+  
+</section>
+
+<section class="ui center aligned middle aligned segment" style="margin-bottom:-0.5em">
+  
+  <h2 class="ui header subHeading">
+    Your Movie Collections Statistics
+  </h2>
+  
+  <div class="ui divider"></div>
+  
+  {{#with userStatistics}}
+    {{> statistics}}
+  {{/with}}
+  
+</section>

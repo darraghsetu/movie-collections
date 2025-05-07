@@ -1,0 +1,94 @@
+<div class="column">
+
+  <div 
+    id="movie-data-{{@index}}"
+    data-movie-index="{{@index}}"
+    data-collection-id="{{collectionId}}"
+    data-movie-id="{{movieId}}"
+    data-title="{{title}}"
+    data-release-year="{{releaseYear}}"
+    data-runtime="{{runtime}}"
+    data-directors="{{toJSON directors}}"
+    data-cast="{{toJSON cast}}"
+    data-genres="{{toJSON genres}}"
+    data-image-source="{{image}}"
+    data-favourite="{{favourite}}">
+
+    <div id="movie-card" class="ui fluid tiny horizontal card">
+      
+      <div class="ui left floated image" style="margin: 0; background-color: white; width: 34%; overflow: hidden; border-top-right-radius: 0 !important; border-bottom-left-radius: 4.57143px !important; max-height: 253px">
+        <img src="{{image}}" style="object-fit: cover;">
+      </div>
+
+      <div class="ui content">
+
+        <div class="header" style="margin-bottom: 5px; color: #b30000">
+          {{title}}
+          ({{releaseYear}})
+        </div>
+
+        <div class="meta" style="margin-bottom: 15px">
+          {{#each genres}}
+            {{this}}{{#unless @last}}, {{/unless}}
+          {{/each}}
+        </div>
+
+        <div class="description" style="min-height: 125px">
+
+          <p style="margin-bottom: 5px">
+            <b>Directed By:</b>
+            
+            {{#each directors}}
+              {{this}}{{#unless @last}}, {{/unless}}
+            {{/each}}
+          </p>
+
+          <p style="margin-bottom: 5px">
+            <b>Starring:</b>
+          
+            {{#each cast}}
+              {{this}}{{#unless @last}}, {{/unless}}
+            {{/each}}
+          </p>
+
+          <p style="margin-bottom: 12.5px">
+            <b>Runtime:</b>
+            {{formatMinutes runtime}}
+          </p>
+
+          {{#if favourite}}
+            <p>
+              <i class="ui yellow star icon"></i>
+              Favourited
+            </p>
+          {{/if}}
+
+        </div>
+        
+        <div class="ui three spaced tiny buttons">
+
+          <div class="ui basic negative editBtn button" style="margin-bottom: 0">
+            Edit
+          </div>
+
+          <div id="delete-movie-button-{{@index}}" class="ui button" style="margin-bottom: 0">
+            Delete
+          </div>
+
+          <script>
+            document.getElementById(
+              'delete-movie-button-{{@index}}').addEventListener('click', () => {
+                window.location.href = "/movie-collection/{{collectionId}}/deletemovie/{{movieId}}";      
+              }
+            );
+          </script>
+          
+        </div>
+        
+      </div>
+
+    </div>
+    
+  </div>
+  
+</div>

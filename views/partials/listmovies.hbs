@@ -1,0 +1,38 @@
+<section class="ui left aligned middle aligned segment" style="padding-bottom: 25px">
+
+  <h1 class="ui center aligned header pageHeading" style="margin-top: 10px; margin-bottom: 15px">
+    {{title}}
+  </h1>
+
+  <div class="ui divider"></div>
+
+  <div class="ui fourteen wide column">
+    <div id="new-movie-btn" class="ui right floated basic negative button" 
+      style="margin-bottom: 10px; margin-right: 15px;">
+      <i class="plus icon"></i>
+      Add Movie
+    </div>
+  </div>
+
+  {{#unless movies}}
+    <div class="ui icon red center aligned message">
+      <i class="frown open outline icon" style="color: #b30000"></i>
+      
+      <div class="content">
+        <div class="header">No Movies in Collection</div>
+        
+        <p>Click the Add Movie button to get started</p>
+      </div>
+    </div>
+
+  {{else}}
+    <div id="movie-collection" class="ui two column compact grid" style="margin-top: 65px; padding: 0; width: 100%">
+
+    {{#each movies}}
+      {{> listmovie collectionId=../collectionId}}
+    {{/each}}
+
+    </div>
+  {{/unless}}
+  
+</section>

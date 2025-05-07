@@ -1,0 +1,14 @@
+{
+  "info": [
+    {
+      "name": "The Terror Trove",
+      "storeLocation": [ "32 North Main Street", "Cork", "T12 F5N8" ],
+      "blurb": "Since opening its doors 25 years ago, The Terror Trove has been bringing you a carefully curated collection of horror DVDs. From cult classics to obscure gems, we're dedicated to keeping our customers collections up to date with the best horror has to offer. Dive into our trove and discover the terror that awaits!"
+    },
+    {
+      "developer": "Really Good Web Apps Inc.",
+      "version": "1.0",
+      "yearDeveloped": 2025
+    }
+  ]
+}
